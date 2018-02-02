@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/invest/invest_detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundColor":"#F2f2f2",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#46b4ff",
+    "navigationBarTitleText": "微拍贷",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "color":"#999999",
+    "selectedColor": "#04b4fd",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/footer_01.png",
+        "selectedIconPath": "images/footer_011.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "投资",
+        "iconPath": "images/footer_02.png",
+        "selectedIconPath": "images/footer_021.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "商城",
+        "iconPath": "images/footer_04.png",
+        "selectedIconPath": "images/footer_041.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我",
+        "iconPath": "images/footer_03.png",
+        "selectedIconPath": "images/footer_031.png"
+      }
+    ]
+  }
+}

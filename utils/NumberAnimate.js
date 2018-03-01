@@ -68,7 +68,7 @@ class NumberAnimate {
 
     try {
 
-      baseNum1 = num1.toString().split(.)[1].length;
+      baseNum1 = num1.toString().split(".")[1].length;
 
     } catch (e) {
 
@@ -78,7 +78,7 @@ class NumberAnimate {
 
     try {
 
-      baseNum2 = num2.toString().split(.)[1].length;
+      baseNum2 = num2.toString().split(".")[1].length;
 
     } catch (e) {
 

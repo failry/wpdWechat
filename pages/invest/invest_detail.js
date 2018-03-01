@@ -29,9 +29,9 @@ Page({
   },
   onLoad: function (options) {
     var self = this;
-    console.log(this)
+    console.log(options)
     self.setData({
-      type: options.type||'loan',
+      type: options.type ||'loan',
       nid: options.id ||'LOAN201801161516094848'
     })
     self.getdetailData();

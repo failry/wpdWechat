@@ -23,7 +23,7 @@
     </view>
     <view class="contont">
 	   	<view class="contontall">
-          <block wx:for="{{list}}" wx:key="*this">
+          <block wx:for="{{list}}" wx:key="key">
             <view class="contontli">
                 <view class="contonttitle" wx:if="{{item.borrow_type == 'sds'}}">{{item.loan_name}}</view>
                 <view class="contonttitle" wx:else>{{item.shut_name}}</view>

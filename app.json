@@ -25,7 +25,7 @@
         "selectedIconPath": "images/footer_011.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/product/product",
         "text": "投资",
         "iconPath": "images/footer_02.png",
         "selectedIconPath": "images/footer_021.png"

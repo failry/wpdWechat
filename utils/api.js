@@ -7,11 +7,13 @@ module.exports.apiList = {
   scrollpic:params =>{
     return util.postData(`${base}/wpd/index/scrollpic/GetList`,params);
   },
-  //
   detailList:params =>{
     return util.getData(`${base}/wpd/index/borrow/product_borrow_detail`,params);
   },
   product_borrow_list:function(params){
   	 return util.postData(`${base}/wpd/index/borrow/product_borrow_list`,params);
+  },
+  product_borrow_detail_list: params =>{
+    return util.postData(`${base}/wpd/index/borrow/product_borrow_detail_list`,params)
   }
 }

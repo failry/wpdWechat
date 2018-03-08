@@ -25,24 +25,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 0,
 			"list": [
 				{
 					"id": -1,
 					"name": "invest2",
-					"pathName": "pages/invest/invest_detail",
+					"pathName": "pages/mall/index/mall",
 					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "product",
-					"pathName": "pages/product/product",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "account",
-					"pathName": "pages/account/index"
 				}
 			]
 		}

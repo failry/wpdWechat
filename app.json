@@ -3,46 +3,42 @@
     "pages/index/index",
     "pages/product/product",
     "pages/invest/invest_detail",
-    "pages/account/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/mall/index/mall"
   ],
   "window":{
-    "backgroundColor":"#f2f2f2",
-    "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#04b4fd",
-    "navigationBarTitleText": "微拍贷",
-    "navigationBarTextStyle":"#fff",
+    "backgroundColor":"#f5f5f5",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
     "enablePullDownRefresh": true
   },
   "tabBar": {
-    "backgroundColor":"#fff",
-    "color":"#999999",
+    "color": "#999999",
     "selectedColor": "#04b4fd",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/footer_01.png",
-        "selectedIconPath": "images/footer_011.png"
-      },
-      {
-        "pagePath": "pages/product/product",
-        "text": "投资",
-        "iconPath": "images/footer_02.png",
-        "selectedIconPath": "images/footer_021.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "商城",
-        "iconPath": "images/footer_04.png",
-        "selectedIconPath": "images/footer_041.png"
-      },
-      {
-        "pagePath": "pages/account/index",
-        "text": "我",
-        "iconPath": "images/footer_03.png",
-        "selectedIconPath": "images/footer_031.png"
-      }
-    ]
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/footer_01.png",
+      "selectedIconPath": "images/footer_011.png",
+      "text": "首页"
+    },{
+      "pagePath": "pages/product/product",
+      "iconPath": "images/footer_02.png",
+      "selectedIconPath": "images/footer_021.png",
+      "text": "投资"
+    },{
+      "pagePath": "pages/mall/index/mall",
+      "iconPath": "images/footer_03.png",
+      "selectedIconPath": "images/footer_031.png",
+      "text": "商城"
+    },{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/footer_04.png",
+      "selectedIconPath": "images/footer_041.png",
+      "text": "我"
+    }]
   }
 }

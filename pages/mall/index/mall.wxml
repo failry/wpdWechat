@@ -1,0 +1,82 @@
+<!--index.wxml-->
+  <view class="container">
+    <view class='page-main'>
+      <swiper class='J-swiper' interval="3000" duration="1000" autoplay="{{autoplay}}" indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActiveColor}}" indicator-color="{indicatorColor}}" >
+        <block wx:for="{{imgUrls}}" wx:key="key">
+          <swiper-item>
+              <image src="{{item}}" class="slide-image" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class='malli-main clearfix'>
+      	<view class="malli-mainleft fl">
+      		<view class='mainleft-text1'>20,000</view>
+          <view class='mainleft-text2'>可用微币</view>
+		    </view>
+      	<view class="malli-mainright fl">
+          <image src="../../../images/mall/shop01.png" class="mainright01"></image>
+          <view class='mainright-text1'>可用微币</view>
+        </view>
+      </view>
+      <view class="malli-hb">
+          <view class="malli-hb01">红包兑换</view>
+          <view class="malli-hb02">
+            <view class="malli-li01">
+              <image src="../../../images/mall/shop02.png" class="malli-liimg01"></image>
+              <view class='malli-liimgte01'>现金红包</view>
+            </view>
+            <view class="malli-li02">
+              <image src="../../../images/mall/shop03.png" class="malli-liimg01"></image>
+              <view class='malli-liimgte01'>投资红包</view>
+            </view>
+            <view class="malli-li03">
+              <image src="../../../images/mall/shop04.png" class="malli-liimg01"></image>
+              <view class='malli-liimgte01'>加息红包</view>
+            </view>
+          </view>
+      </view>
+      <view class="productsz">
+          <view class="products01 clearfix">
+             <view class="products1 clearfix">
+                 <view class="products1_01"></view>
+                 <view class="products1_02">推荐产品</view> 
+             </view>
+             <view class="products2 clearfix">
+                <view class="products2_1">
+                  <image src="../../../images/mall/shop05.png" class="products02_1"></image>
+                  <view class="products02_2">Apple iMac</view>
+                  <view class="products02_3"></view>
+                  <view class="products02_4">500000微币</view>
+                </view>
+                <view class="products2_2">
+                  <image src="../../../images/mall/shop05.png" class="products02_1"></image>
+                  <view class="products02_2">Apple iMac</view>
+                  <view class="products02_3"></view>
+                  <view class="products02_4">500000微币</view>
+                </view>
+                <view class="products2_3">
+                  <image src="../../../images/mall/shop05.png" class="products02_1"></image>
+                  <view class="products02_2">Apple iMac</view>
+                  <view class="products02_3"></view>
+                  <view class="products02_4">500000微币</view>
+                </view>
+             </view>
+          </view>
+      </view>
+      <view class="productsty">
+          <view class="productsty1 clearfix">
+            <view class="productsty_01"></view>
+            <view class="productsty_02">数码电器</view>
+            <view class="productsty_03">更多></view>  
+          </view>
+          <view class="productstyul">
+            <view class="productstyli">
+                <view class="pstyli-kuang">
+                    <image src="../../../images/mall/shop05.png" class="products02_1"></image>
+                </view>
+            </view>
+          </view>
+      </view>	
+    </view>
+</view>
+

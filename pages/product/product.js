@@ -7,12 +7,10 @@ Page( {
       params:{
         stype: 'all' ,
         sortType: '5',
-        epage:"10",
-        page:1
+        epage:'10',
+        page:'1'
       },
-      onshow:false,
-      loan_nid:'',
-      nid_name:''
+      onshow:false
   }, 
   tabFun: function(e){ 
     var self = this;  
@@ -95,15 +93,15 @@ Page( {
             list: lists,
             onshow: false  
           });
-          // res.data.lists.shut_id ? self.setData({nid_name: "shut_id",loan_nid:res.data.lists.shut_id}) : self.setData({nid_name: "loan_nid",loan_nid:res.data.lists.loan_nid});
-          // console.log(self.data);
         }
     })
   },
-  invest:function(){
+  invest:function(e){
     var self = this;
-    // detailList
-    // const params = self.data.params;
+    const params2 = (e.target.dataset.shut_id == 0  && e.target.dataset.loan_nid) ?{id:e.target.dataset.loan_nid,type:'loan'} : {id:e.target.dataset.shut_id,type:'shut'};
+    wx.navigateTo({
+      url: '../invest/invest_detail?id='+params2.id+'&type='+params2.type
+    })
   },
   onLoad:function(){
     var self = this;

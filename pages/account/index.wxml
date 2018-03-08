@@ -1,0 +1,12 @@
+<!--index.wxml-->
+  <view class="container">
+    <view class='m-main'>
+      <view class='m-banner'>
+        <image src='../../images/account/wbanner_02.png'></image>
+      </view>
+    </view>
+  </view> 
+<!-- <view class="bottom" hidden="{{hideBottom}}">
+  <view class='refresh'>{{loadMoreData}}</view>
+</view> -->
+

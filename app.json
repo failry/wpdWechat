@@ -3,12 +3,13 @@
     "pages/index/index",
     "pages/product/product",
     "pages/invest/invest_detail",
+    "pages/account/index",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundColor":"#f2f2f2",
     "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#46b4ff",
+    "navigationBarBackgroundColor": "#04b4fd",
     "navigationBarTitleText": "微拍贷",
     "navigationBarTextStyle":"#fff",
     "enablePullDownRefresh": true
@@ -37,7 +38,7 @@
         "selectedIconPath": "images/footer_041.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/account/index",
         "text": "我",
         "iconPath": "images/footer_03.png",
         "selectedIconPath": "images/footer_031.png"

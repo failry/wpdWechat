@@ -28,9 +28,9 @@
 			"current": 0,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "invest2",
-					"pathName": "pages/mall/index/mall",
+					"pathName": "pages/account/index",
 					"query": ""
 				}
 			]

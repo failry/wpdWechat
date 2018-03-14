@@ -127,43 +127,41 @@ page {
 	margin-top: 20rpx;
 	justify-content:space-around;
 }
-.products2_1{
+.products2_0{
 	
 	width: 234rpx;
 	height: 373rpx;
 	border:1px solid #d9d9d9;
 	text-align: center;
 }
-.products2_2{
-	width: 234rpx;
-	height: 373rpx;
-	border:1px solid #d9d9d9;
-	text-align: center;
-}
-.products2_3{
-	width: 234rpx;
-	height: 373rpx;
-	border:1px solid #d9d9d9;
-	text-align: center;
+.bjproduct{
+	width: 216rpx;
+	height: 244rpx;
+	overflow: hidden;
+	background: #b4d8f4;
+	margin: 0 auto;
+	margin-top: 8rpx;
 }
 .products02_1{
 	width: 216rpx;
 	height: 244rpx;
 	display: block;
-	margin: 0 auto;
-	margin-top: 8rpx;
 }
 .products02_2{
-	font-size: 20rpx;
-	color: #6b6b6b;
-	margin-top: 20rpx;
+	font-size:20rpx;
+	color:#6b6b6b;
+	margin-top:20rpx;
+	max-height:27rpx;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
 }
 .products02_3{
 	width: 95rpx;
 	height: 2rpx;
 	background: #666666;
 	margin:0 auto;
-	margin-top: 3rpx;
+	margin-top: 11rpx;
 }
 .products02_4{
 	font-size: 20rpx;
@@ -206,13 +204,27 @@ page {
 	padding-right: 30rpx;
 }
 .productstyul{
-	width: 100%;
+	width: 710rpx;
+	margin: 0 auto;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
 }
 .productstyli{
 	width: 350rpx;
+	overflow: hidden;
+	margin-top: 30rpx;
+	margin-bottom:10rpx;
+}
+.productstyliwkuang{
+	width: 350rpx;
 	height: 255rpx;
 	background: #e8e9ed;
-	overflow: hidden;
+}
+.productstyliwkuang2{
+	width: 350rpx;
+	height: 255rpx;
+	background: #e5ebeb;
 }
 .pstyli-kuang{
 	width: 338rpx;
@@ -220,4 +232,48 @@ page {
 	border:1rpx solid #f0f0f0;
 	margin-top: 4rpx;
 	margin-left: 4rpx;
+	text-align: center;
+	line-height: 243rpx;
+}
+.productstyli01{
+	width: 128rpx;
+	height: 220rpx;
+	display: inline-block;
+	vertical-align: middle;
+}
+.productstyli2{
+	background: #e5ebeb;
+}
+.productstyli02{
+	width: 338rpx;
+	color: #333333;
+	font-size: 24rpx;
+	height: 30rpx;
+	overflow: hidden;
+	text-overflow:ellipsis;
+    white-space:nowrap;
+    margin-top: 20rpx;
+    margin-bottom: 16rpx;
+}
+.productstyli03{
+	position: relative;
+	line-height: 30rpx; 
+}
+.productstyli04{
+	width: 24rpx;
+	height: 24rpx;
+}
+.productstyli05{
+	padding-left: 6rpx;
+	color: #333;
+	font-size: 26rpx;
+}
+.productstyli06{
+	position: absolute;
+	right: 0;
+	color: #808080;
+	font-size: 24rpx;
+}
+.productstyli07{
+	color: #f14f50;
 }

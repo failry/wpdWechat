@@ -42,41 +42,46 @@
                  <view class="products1_02">推荐产品</view> 
              </view>
              <view class="products2 clearfix">
-                <view class="products2_1">
-                  <image src="../../../images/mall/shop05.png" class="products02_1"></image>
-                  <view class="products02_2">Apple iMac</view>
+             <block wx:for="{{productList[0].products}}" wx:key="*this">
+                <view class="products2_0">
+                  <view class="bjproduct">
+                    <image src="{{item.img}}" class="products02_1"></image>
+                  </view>
+                  <view class="products02_2">{{item.name}}</view>
                   <view class="products02_3"></view>
-                  <view class="products02_4">500000微币</view>
+                  <view class="products02_4">{{item.price}}微币</view>
                 </view>
-                <view class="products2_2">
-                  <image src="../../../images/mall/shop05.png" class="products02_1"></image>
-                  <view class="products02_2">Apple iMac</view>
-                  <view class="products02_3"></view>
-                  <view class="products02_4">500000微币</view>
-                </view>
-                <view class="products2_3">
-                  <image src="../../../images/mall/shop05.png" class="products02_1"></image>
-                  <view class="products02_2">Apple iMac</view>
-                  <view class="products02_3"></view>
-                  <view class="products02_4">500000微币</view>
-                </view>
+              </block>
              </view>
           </view>
       </view>
-      <view class="productsty">
-          <view class="productsty1 clearfix">
-            <view class="productsty_01"></view>
-            <view class="productsty_02">数码电器</view>
-            <view class="productsty_03">更多></view>  
-          </view>
-          <view class="productstyul">
-            <view class="productstyli">
-                <view class="pstyli-kuang">
-                    <image src="../../../images/mall/shop05.png" class="products02_1"></image>
-                </view>
+      <block wx:for="{{productList}}" wx:key="*this">
+          <block wx:if="{{index != 0}}">
+            <view class="productsty">
+            <view class="productsty1 clearfix" style="background: #{{item.bgColor}}">
+              <view class="productsty_01"></view>
+              <view class="productsty_02">{{item.cname}}</view>
+              <view class="productsty_03" data-cid="{{item.cid}}">更多></view>  
             </view>
-          </view>
-      </view>	
+            <view class="productstyul">
+              <view class="productstyli" wx:for="{{item.products}}" wx:key="*this" wx:for-item="items">
+                  <view class="productstyliwkuang">
+                    <view class="pstyli-kuang" data-id="{{items.id}}">
+                        <image src="{{items.img}}" class="productstyli01"></image>
+                    </view>
+                  </view>
+                  <view class="productstyli02">{{items.name}}</view>
+                  <view class="productstyli03">
+                    <image src="../../../images/mall/shop10.png" class="productstyli04"></image>
+                    <text class="productstyli05">40,000</text>
+                    <text class="productstyli06">剩余<text class="productstyli07">5</text>件</text>
+                  </view>
+              </view>
+            </view>
+        </view>
+            
+        </block>
+      </block>  
     </view>
 </view>
 

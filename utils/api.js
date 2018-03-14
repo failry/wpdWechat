@@ -1,6 +1,7 @@
 const util = require('util.js');
 
 const base = 'http://192.168.1.17:8087';
+const redis = 'http://192.168.1.17:8011';
 
 module.exports.apiList = {
   //获取banner数据
@@ -13,7 +14,7 @@ module.exports.apiList = {
   product_borrow_list:function(params){
   	 return util.postData(`${base}/wpd/index/borrow/product_borrow_list`,params);
   },
-  product_borrow_detail_list: params =>{
-    return util.postData(`${base}/wpd/index/borrow/product_borrow_detail_list`,params)
+  productList: params =>{
+    return util.postData(`${redis}/user/we_mall/productList?recomCount=3&productCount=4`,params)
   }
 }

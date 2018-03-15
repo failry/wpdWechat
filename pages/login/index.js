@@ -37,9 +37,14 @@ Page({
     app.$ajax.login(params).then((res) => {
       if(res.data.result == "1"){
         app.$alert(res.data.errorMsgInfo, function () {
-          wx.navigateTo({
-            url: '../account/index'
-          });
+          wx.switchTab({
+            url: '../index/index',
+            success: function (e) {
+              // var page = getCurrentPages().pop();
+              // if (page == undefined || page == null) return;
+              // page.onLoad();
+            }
+          }) 
         });
       }else{
         app.$alert(res.data.errorMsgInfo);

@@ -5,7 +5,10 @@
     "pages/invest/invest_detail",
     "pages/mall/index/mall",
     "pages/account/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/login/index",
+    "pages/findpwd/index",
+    "pages/findpwd/pwd"
   ],
   "window":{
     "backgroundColor":"#f2f2f2",

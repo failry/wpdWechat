@@ -1,5 +1,6 @@
 //app.js
 const api = require('./utils/api.js');
+const md5 = require('./lib/md5/md5.js');
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -43,5 +44,16 @@ App({
       wx.stopPullDownRefresh();
       callback && callback();
     }, 800);
-  }
+  },
+  $alert: function (content, callback, title, showCancel){
+    wx.showModal({
+      title: title || '提示',
+      content: content || '请输入验证码',
+      showCancel: showCancel||false,
+      success: callback
+    })
+  },
+  md5: function (str){
+    return md5(str);
+  } 
 })

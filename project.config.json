@@ -25,7 +25,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": 0,
@@ -37,6 +37,12 @@
 					"id": -1,
 					"name": "mallindex",
 					"pathName": "pages/mall/index/mall",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "coinsuse",
+					"pathName": "pages/mall/coinsuse/coinsuse",
 					"query": ""
 				}
 			]

@@ -6,7 +6,6 @@
     "pages/mall/index/mall",         
     "pages/mall/coinsuse/coinsuse", 
     "pages/account/index",
-    "pages/logs/logs",
     "pages/login/index",
     "pages/findpwd/index",
     "pages/findpwd/pwd"

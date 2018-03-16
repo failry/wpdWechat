@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!--商城首页.wxml-->
     <view class="container">
       <view class='page-main'>
         <swiper class='J-swiper' interval="3000" duration="1000" autoplay="{{autoplay}}" indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActiveColor}}" indicator-color="{indicatorColor}}" >

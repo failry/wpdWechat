@@ -63,14 +63,6 @@ Page({
       self.currency();
     },500)
   },
-  lower: function(e){
-    console.log(e);
-    var self = this;
-    self.setData({
-      onshow:true
-    })
-
-  },
   onLoad:function(){
     var self = this;
     self.productList();

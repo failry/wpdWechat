@@ -50,7 +50,16 @@ Page({
         app.$alert(res.data.errorMsgInfo);
       }
     })
-
+  },
+  forgetPwd:function(){
+    if (!this.data.userName) {
+      app.$alert("请输入手机号码");
+      return false;
+    }else{
+      wx.navigateTo({
+        url: '../../pages/findpwd/index?phone=' + this.data.userName
+      });  
+    }
   },
   onReady: function () {
     

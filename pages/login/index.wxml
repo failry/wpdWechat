@@ -10,8 +10,8 @@
             <label class='form-label'><image src='../../images/login/password.png'></image></label>
             <input class='form-input' type='password' placeholder='请输入密码' maxlength='20' bindinput='passWdInput'></input>
           </view>
-          <navigator class='form-forget' url="../../pages/findpwd/index?phone={{userName}}" open-type="navigate" hover-class="other-navigator-hover">
-          忘记密码</navigator>
+          <view class='form-forget' url="" bindtap='forgetPwd'>
+          忘记密码</view>
           <button class='form-button' formType="submit">登录</button>
       </view>
     </form>

@@ -36,5 +36,9 @@ module.exports.apiList = {
   //当前可用微币
   currency: params =>{
     return util.postData(`${redis}/user/we_mall/currency`,params)
+  },
+  //微币记录列表
+  cList: params =>{
+    return util.postData(`${redis}/user/we_mall/cList`,params)
   }
 }

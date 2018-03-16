@@ -41,13 +41,7 @@ App({
       }
     })
     //获取用户登录信息
-    var user_id = wx.getStorageSync('user_id') || '';
-    var us_token = wx.getStorageSync('us_token') || ''; 
-    var params = {
-      user_id: user_id,
-      us_token: us_token
-    };
-    self.$ajax.getAppInfo(params).then((res) => {
+    self.$ajax.getAppInfo().then((res) => {
       self.globalData.userData = res.data;
       if (api.util.isEmpty(res.data) || typeof (res.data.us_token_msg) == "undefined") {
         api.util.$alert(ECODE.E0004);

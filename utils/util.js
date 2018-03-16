@@ -1,3 +1,6 @@
+const user_id = wx.getStorageSync('user_id') || '';
+const us_token = wx.getStorageSync('us_token') || '';
+
 const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
@@ -43,6 +46,9 @@ module.exports.isEmpty = obj => {
   * @return {[type]}         [Promise]
  */
 module.exports.getData = (url, params) => {
+  params = params || {};
+  params.user_id = user_id;
+  params.us_token = us_token;
   return new Promise(function (resolve, reject) {
     wx.request({
       url: url,
@@ -65,6 +71,9 @@ module.exports.getData = (url, params) => {
   * @return {[type]}         [Promise]
  */
 module.exports.postData = (url, params) => {
+  params = params || {};
+  params.user_id = user_id;
+  params.us_token = us_token;
   return new Promise(function (resolve, reject) {
     wx.request({
       url: url,

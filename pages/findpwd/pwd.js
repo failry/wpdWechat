@@ -31,13 +31,15 @@ Page({
       unixkey: subtime
     };
     app.$ajax.userBackPwd(params).then((res) => {
-      console.log(res)
+      // console.log(res)
       if (res.data.returnCode == "1"){
-        app.$alert(res.data.returnMsg,function(){
-          wx.navigateTo({
+        app.$alert(res.data.returnMsg).then(function(){
+          wx.redirectTo({
             url: '../login/index'
           });
         });
+      }else{
+        app.$alert(res.data.returnMsg);
       }
     }) 
   },

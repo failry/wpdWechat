@@ -45,13 +45,9 @@ Page({
         app.globalData.userId = res.data.user_id;
         wx.setStorageSync("user_id", res.data.user_id);
         wx.setStorageSync("us_token", res.data.us_token);
-        wx.switchTab({
-          url: '../index/index'
-        }) 
+        wx.switchTab({url: '../index/index'}) 
       }else{
-        // app.$alert(res.data.errorMsgInfo).then((res)=>{
-        //     console.log('111')
-        // });
+        app.$alert(res.data.errorMsgInfo);
       }
     })
   },

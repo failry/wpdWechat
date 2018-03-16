@@ -38,7 +38,7 @@ Page({
   codeClick: function (e) {
     var self = this;
     if (!this.data.phone){
-      app.$alert("请输入手机号码",function(){
+      app.$alert("请输入手机号码").then(function(){
         wx.navigateTo({
           url: '../login/index'
         });

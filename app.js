@@ -1,8 +1,16 @@
 //app.js
 const api = require('./utils/api.js');
 const md5 = require('./lib/md5/md5.js');
+const ECODE = {
+  'E0001': '\u7528\u6237\u767b\u5f55\u8bb0\u5f55\u4e0d\u5b58\u5728',
+  'E0002': '\u7528\u6237\u767b\u5f55\u72b6\u6001\u8ba4\u8bc1\u5931\u8d25',
+  'E0003': '\u767b\u5f55\u8d85\u65f6\u6216\u5df2\u5728\u522b\u5904\u767b\u5f55\u002c\u8bf7\u91cd\u65b0\u767b\u5f55',
+  'E0004': '\u7f51\u7edc\u7e41\u5fd9\uff0c\u8bf7\u7a0d\u540e\u518d\u8bd5\u0020\u007e\u007e',
+  'E0005': '\u9000\u51fa\u767b\u5f55\u5931\u8d25\uff01'
+};
 App({
   onLaunch: function () {
+    var self = this;
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -31,10 +39,24 @@ App({
           })
         }
       }
-    }) 
+    })
+    //获取用户登录信息
+    self.$ajax.getAppInfo().then((res) => {
+      self.globalData.userData = res.data;
+      if (api.util.isEmpty(res.data) || typeof (res.data.us_token_msg) == "undefined") {
+        api.util.$alert(ECODE.E0004);
+        return false;
+      }
+      if (res.data.us_token_msg.indexOf(ECODE.E0002) > -1) {
+        api.util.$alert(ECODE.E0003).then(()=>{
+          //退出登录
+        });
+      } 
+    });
   },
   globalData: {
-    userInfo: null   
+    userInfo: null,
+    userData: null,    
   },
   $ajax: api.apiList,
   refresh:function(callback){
@@ -45,14 +67,7 @@ App({
       callback && callback();
     }, 800);
   },
-  $alert: function (content, callback, title, showCancel){
-    wx.showModal({
-      title: title || '提示',
-      content: content || '请输入验证码',
-      showCancel: showCancel||false,
-      success: callback
-    })
-  },
+  $alert: api.util.$alert,
   md5: function (str){
     return md5(str);
   } 

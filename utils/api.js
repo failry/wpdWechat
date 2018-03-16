@@ -40,5 +40,9 @@ module.exports.apiList = {
   //微币记录列表
   cList: params =>{
     return util.postData(`${redis}/user/we_mall/cList`,params)
+  },
+  getAppInfo:params =>{  
+    return util.postData(`${base}/wpd/user_query/user_info`, params)
   }
 }
+module.exports.util = util;

@@ -34,23 +34,36 @@ Page({
       userVerify: encodeStr(postData, subtime),
       unixkey: subtime
     };
+    wx.showToast({
+      title: '正在登录...',
+      icon: 'loading',
+      duration: 10000
+    });
     app.$ajax.login(params).then((res) => {
+      wx.hideToast();
       if(res.data.result == "1"){
-        app.$alert(res.data.errorMsgInfo, function () {
-          wx.switchTab({
-            url: '../index/index',
-            success: function (e) {
-              // var page = getCurrentPages().pop();
-              // if (page == undefined || page == null) return;
-              // page.onLoad();
-            }
-          }) 
-        });
+        app.globalData.userId = res.data.user_id;
+        wx.setStorageSync("user_id", res.data.user_id);
+        wx.setStorageSync("us_token", res.data.us_token);
+        wx.switchTab({
+          url: '../index/index'
+        }) 
       }else{
-        app.$alert(res.data.errorMsgInfo);
+        // app.$alert(res.data.errorMsgInfo).then((res)=>{
+        //     console.log('111')
+        // });
       }
     })
-
+  },
+  forgetPwd:function(){
+    if (!this.data.userName) {
+      app.$alert("请输入手机号码");
+      return false;
+    }else{
+      wx.navigateTo({
+        url: '../../pages/findpwd/index?phone=' + this.data.userName
+      });  
+    }
   },
   onReady: function () {
     

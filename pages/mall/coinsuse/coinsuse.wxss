@@ -1,8 +1,10 @@
 /**index.wxss**/
-
+page{
+	background: #f0f0f0;
+}
 .page-main{
   height: 100%;
-  background: #fff;
+  background: #f0f0f0;
 }
 .fl{
 	float:left;
@@ -23,13 +25,15 @@
 .coin-tabz{
 	width: 100%;
 	border-bottom: 4rpx solid #f0f0f0;
+	background: #fff;
+	overflow: hidden;
 }
 .coin-tab{
 	width: 648rpx;
 	height: 75rpx;
 	border: 2rpx solid #04bfff;
 	margin: 20rpx auto;
-	border-radius: 10rpx;
+	border-radius: 8rpx;
 }
 .coin-tableft{
 	width: 325rpx;
@@ -39,6 +43,7 @@
 	text-align: center;
 	color: #04bfff;
 	font-size: 32rpx;
+	cursor: pointer;
 }
 .coin-tabright{
 	width: 325rpx;
@@ -49,6 +54,7 @@
 	color: #04bfff;
 	font-size: 32rpx;
 	background: #fff;
+	cursor: pointer;
 }
 .active{
   color: #fff;
@@ -57,9 +63,64 @@
 .coin-tabul{
 	width: 100%;
 	overflow:hidden;
+	background: #fff;
 }
 .coin-tabli{
 	height: 100rpx;
 	border-bottom: 2px solid #f0f0f0;
+}
+.hidden{
+	display:none;
+}
+.coin-tabLocation{
+	width: 674rpx;
+	margin: 0 auto;
+	height: 80rpx;
+	
+	overflow: hidden;
+}
+.coin-tabLoright{
+	float: right;
+	font-size: 36rpx;
+	display: inline-block;
+	color: #04b4fd;
+	line-height: 80rpx;
+}
+.coin-tabLoleft{
+	float: left;
+}
+.coin-tabLoleft01{
+	color: #333;
+	font-size: 30rpx;
+	padding-top: 13rpx;
+}
+.coin-tabLoleft02{
+	color:#666666;
+	font-size: 23rpx;
+}
+.Coin-All{
+	width: 750rpx;
+	height: 167rpx;
+	text-align: center;
+	padding-top: 42rpx;
+	color: #808080;
+	font-size: 24rpx;
+}
+.NoRecord{
+	width: 750rpx;
+	overflow: hidden;
+}
+.NoRecordimg{
+	width: 162rpx;
+	height: 133rpx;
+	display: block;
+	margin: 0 auto;
+	margin-top: 153rpx;
+}
+.NorecordMethod{
+	font-size: 26rpx;
+	color: #808080;
+	margin-top: 30rpx;
+	text-align: center;
 }
 

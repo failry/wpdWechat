@@ -44,6 +44,12 @@ Page({
         }
     }) 
   },
+  coinrecord:function(){
+    var self = this;
+    wx.navigateTo({
+      url: '../coinsuse/coinsuse?user_id='+self.data.user_id
+    })
+  },
   //监听下拉的动作
   onPullDownRefresh:function(){
     var self = this;

@@ -14,7 +14,7 @@
             <view class='mainleft-text1'>{{credit}}</view>
             <view class='mainleft-text2'>可用微币</view>
           </view>
-          <view class="malli-mainright fl">
+          <view class="malli-mainright fl" bindtap="coinrecord">
             <image src="../../../images/mall/shop01.png" class="mainright01"></image>
             <view class='mainright-text1'>兑换记录</view>
           </view>

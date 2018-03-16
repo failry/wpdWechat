@@ -3,7 +3,7 @@
 const app = getApp()
 Page({
   data: {
-
+    isLogin:false
   },
   //事件处理函数
   bindViewTap: function () {
@@ -18,6 +18,6 @@ Page({
     });
   },
   onReady: function () {
-
+    console.log(app.globalData.userData)
   }
 })

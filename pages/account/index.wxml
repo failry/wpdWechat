@@ -3,7 +3,7 @@
     <view class='m-main'>
       <view class='m-banner'>
         <image src='../../images/account/wbanner_02.png'></image>
-        <navigator url="../../pages/login/index"  hover-class="other-navigator-hover"><button class='m-regbtn'>注册/登录</button></navigator>
+        <navigator hidden='{{isLogin}}' url="../../pages/login/index"  hover-class="other-navigator-hover"><button class='m-regbtn'>注册/登录</button></navigator>
       </view>
       <view class='flex-warp recharge'>
         <view class='flex-item m-recharge'>

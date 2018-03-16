@@ -85,5 +85,8 @@ Page({
   onReady: function () {
     //创建并返回绘图上下文context对象。
     this.ctxAnimate();
+  },
+  onLoad: function (options) {
+    var self = this;
   }
 })

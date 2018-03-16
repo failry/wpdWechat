@@ -35,6 +35,10 @@ module.exports.apiList = {
   },
   //当前可用微币
   currency: params =>{
-    return util.postData(`${redis}/user/we_mall/currency`,params)
+    
+  },
+  getAppInfo:params =>{  
+    return util.postData(`${base}/wpd/user_query/user_info`, params)
   }
 }
+module.exports.util = util;

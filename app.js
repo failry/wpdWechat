@@ -14,7 +14,6 @@ App({
     // 登录
     wx.login({
       success: res => {
-        console.log(res)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -64,6 +63,7 @@ App({
       callback && callback();
     }, 800);
   },
+  util: api.util,
   $alert: api.util.$alert,
   md5: function (str){
     return md5(str);

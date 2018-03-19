@@ -1,7 +1,6 @@
 //index.js
 //获取应用实例
-const app = getApp()
-const util = require('../../utils/util.js');
+const app = getApp();
 var ctx = wx.createCanvasContext('progress');
 
 Page({
@@ -30,7 +29,7 @@ Page({
   bindViewTap: function () {
 
   },
-  goInvite: util.throttle(function (e) {
+  goInvite: app.util.throttle(function (e) {
     wx.navigateTo({
       url: '../invest/invest_detail?id=LOAN201801161516094848&type=loan'
     })

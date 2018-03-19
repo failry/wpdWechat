@@ -1,5 +1,5 @@
 {
   "navigationBarTitleText": "忘记密码",
-  "enablePullDownRefresh": true,
+  "enablePullDownRefresh": false,
   "backgroundTextStyle": "light"
 }

@@ -11,7 +11,7 @@ Page({
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ],
     productList:[],
-    user_id:'4192148',
+    user_id:'4192152',
     credit:'--'
   },
   //事件处理函数
@@ -37,6 +37,7 @@ Page({
       user_id:self.data.user_id
     }
     app.$ajax. currency(params).then((res) => {
+      console.log(res);
         if(res.data.returnCode == 1){
           self.setData({
             credit:res.data.credit
@@ -71,6 +72,7 @@ Page({
   },
   onLoad:function(){
     var self = this;
+    console.log(self.data.user_id)
     self.productList();
     self.currency();
   }

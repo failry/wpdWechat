@@ -17,7 +17,9 @@ Page({
 
     });
   },
-  onReady: function () {
-    console.log(app.globalData.userData)
+  onLoad: function () {
+    this.setData({
+      isLogin: app.globalData.userData.acc_name ? true : false       
+    })
   }
 })

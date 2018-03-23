@@ -19,7 +19,7 @@ Page({
     if(self.data.type=='loan'){
       app.$ajax.detailList(params).then((res) => {
         var listData = res.data;
-        console.log(listData)
+        // console.log(listData)
         self.setData({
           detailList: listData,
           title: listData.shut_name

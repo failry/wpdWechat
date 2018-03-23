@@ -39,6 +39,7 @@ App({
     //获取用户登录信息
     self.$ajax.getAppInfo().then((res) => {
       self.globalData.userData = res.data;
+      console.log('111')
       if (api.util.isEmpty(res.data) || typeof (res.data.us_token_msg) == "undefined") {
         api.util.$alert(ECODE.E0004);
         return false;
